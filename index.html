@@ -1,39 +1,56 @@
 
 <div class="logo-lockup" role="img" aria-label="Put all mental health carers in the picture">
-  <div class="line1">
-    Put all mental health carers
-  </div>
-  <div class="line2">
-    in the picture
+  <div class="text-wrap">
+    <div class="line1">Put all mental health carers</div>
+    <div class="line2">in the picture</div>
   </div>
 </div>
 
 <style>
+/* Outer container (background box) */
+.logo-lockup {
+  background-color: #e9e9e9; /* light grey background */
+  padding: 40px 30px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Inner text container to match width constraints */
+.text-wrap {
+  max-width: 1400px; /* adjust if needed */
+}
+
+/* Shared typography */
 .logo-lockup {
   font-family: "TWK Lausanne 350", Arial, Helvetica, sans-serif;
   line-height: 0.95;
 }
 
-/* Top line (blue) */
-.logo-lockup .line1 {
+/* Blue line */
+.line1 {
   color: #2f8cc4;
   font-size: 4.5rem;
-  font-weight: 350; /* matches Lausanne 350 */
+  font-weight: 350;
 }
 
-/* Bottom line (purple) */
-.logo-lockup .line2 {
+/* Purple line */
+.line2 {
   color: #7a5a87;
   font-size: 4.2rem;
   font-weight: 350;
 }
 
-/* Responsive scaling */
+/* Responsive */
 @media (max-width: 768px) {
-  .logo-lockup .line1 {
+  .logo-lockup {
+    padding: 25px 20px;
+  }
+
+  .line1 {
     font-size: 2.5rem;
   }
-  .logo-lockup .line2 {
+
+  .line2 {
     font-size: 2.3rem;
   }
 }
