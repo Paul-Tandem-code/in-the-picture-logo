@@ -1,13 +1,8 @@
 
 <div class="logo-lockup" role="img" aria-label="Put all mental health carers in the picture">
 
-  <div class="line line1">
-    Put all mental health carers
-  </div>
-
-  <div class="line line2">
-    in the picture
-  </div>
+  <div class="line1">Put all mental health carers</div>
+  <div class="line2">in the picture</div>
 
 </div>
 
@@ -16,10 +11,11 @@
   font-family: "TWK Lausanne 350", Arial, Helvetica, sans-serif;
 }
 
-/* Shared styling for both lines */
-.line {
-  display: inline-block;              /* ensures background wraps text */
-  background-color: #f2f1ee;          /* exact colour */
+/* Shared styling */
+.logo-lockup div {
+  display: block;              /* ✅ guarantees line break */
+  width: fit-content;          /* ✅ box hugs text */
+  background-color: #f2f1ee;   /* ✅ exact colour */
   padding: 10px 16px;
   line-height: 1;
 }
@@ -29,7 +25,7 @@
   color: #2f8cc4;
   font-size: 4.5rem;
   font-weight: 350;
-  margin-bottom: 8px;                 /* space between lines */
+  margin-bottom: 8px;
 }
 
 /* Second line */
@@ -49,7 +45,7 @@
     font-size: 2.3rem;
   }
 
-  .line {
+  .logo-lockup div {
     padding: 8px 12px;
   }
 }
